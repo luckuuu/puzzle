@@ -7,10 +7,20 @@
 </head>
 <body>
   <p>
-    Enter Code:
+    Enter 2 digit Code:
   </p>
-  <label for="fname">Code Here:</label>
+  <label for="fname">Here --></label>
   <input type="text" id="fname" name="fname"><br><br>
+    <button onClick="checkAnswer()">Submit</button>
   <input type="submit" value="Submit">
+    <script>
+        function checkAnswer(){
+            var heyyyy = document.getElementById("fname").value;
+            if(heyyyy == '73') {
+                document.getElementById('trstan').innerHTML = 'RAKIN AND AUG CLU O BLOCK'
+            }
+        }
+    </script>
+    <p id = 'trstan'></p>
 </body>
 </html>
