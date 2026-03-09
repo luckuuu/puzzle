@@ -10,9 +10,13 @@
           color:white;
           font-family:Georgia;
             size: 100px;
+            font-size: 100px;
         }
         #button{
             background-color:#363636; 
+        }
+        #mike{
+            size:500px;
         }
     </style>
 </head>
@@ -23,7 +27,7 @@
   <label for="fname" class="text">Here --></label>
   <input type="text" id="fname" name="fname"><br><br>
     <button id="button" class="text" onClick="checkAnswer()">Submit</button>
-    <img src="mike.jpg">
+    <img id='mike' src="mike.jpg">
     <script>
         function checkAnswer(){
             var heyyyy = document.getElementById("fname").value;
